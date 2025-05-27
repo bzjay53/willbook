@@ -1,0 +1,9 @@
+        # docker-compose.yml 예시
+        services:
+          backend:
+            # ... other settings
+            environment:
+              # 민감 정보는 env_file 사용 권장
+              NODE_ENV: production
+            env_file:
+              - .env.production # 운영 환경용 .env 파일 경로 지정
